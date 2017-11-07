@@ -43,7 +43,7 @@ public class flinkProcessing implements Serializable{
         DataStream<SensorPojo> CountStream = env
                 .addSource(new FlinkKafkaConsumer010<>("COUNT", new SensorSchema(), properties));
 
-
+    //prueba git
 
 
         // ----------Topología stream---------
