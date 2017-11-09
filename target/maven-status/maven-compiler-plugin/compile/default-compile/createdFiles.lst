@@ -4,6 +4,7 @@ PostInfluxStatistis.class
 MapCountAlarmas.class
 MapCountState.class
 FiltroAlarmasActivas.class
+flinkProcessing.class
 AlarmasActivasSink.class
 DataPostInfluxDB.class
 GoogleMail.class
@@ -15,5 +16,4 @@ DataMessageMail.class
 MapCountState$1.class
 FiltroGenerarAlarma.class
 MapCountAlarmas$1.class
-flinkProcessingApp.class
 SensorPojo.class

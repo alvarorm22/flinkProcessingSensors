@@ -9,8 +9,12 @@ public class FiltroCount implements FilterFunction<SensorPojo> {
 
         if(sensorPojo.getMovimiento().equals("true")) sensorPojo.setTipo("movimiento");
         else if (sensorPojo.getHumo().equals("true")) sensorPojo.setTipo("humo");
-        else if ((Double.parseDouble(sensorPojo.getTemperatura())) >= (Double.parseDouble(sensorPojo.getTempMaxima()))) {
+        else if ((Integer.parseInt(sensorPojo.getTemperatura())) >= (Integer.parseInt(sensorPojo.getTempMaxima()))) {
             sensorPojo.setTipo("temperatura");
+        }
+
+        if (sensorPojo.getTipo().equals(null)){
+            sensorPojo.setTipo("empty");
         }
 
         System.out.println("---------------------------------------Recibido +1 Tipo: "+sensorPojo.getTipo());
