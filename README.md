@@ -1,6 +1,13 @@
 # flinkProcessingSensors
 ### Implementación de una arquitectura en tiempo real para el procesamiento y control de eventos procedentes de sensores y alarmas
 
+#### Esta aplicación es una parte de mi Proyecto Fin de Master elaborado como resultado del III Máster de Arquitecturas Big Data impartido por KSchool.
+
+#### La arquitectura completa de todo el proyecto se puede ver en la siguiente imagen:
+
+![Arquitectura del proyecto](https://image.ibb.co/cRSmCb/arquitectura_completa.png)
+
+
 
 El mensaje que recibe y procesa Flink tiene el siguiente aspecto:
 {
@@ -37,13 +44,6 @@ Los mensajes del topic ENTRY que han llegado con el campo movimiento activo o se
 
 Por otro lado, Flink recoge los mensajes del topic COUNT, (que ya son todos con su alarma activa), le aplica un filtro para conocer el tipo del mensaje, paraleliza por su tipo (así se asegura que todos los mensajes del mismo tipo van a ir al mismo task de flink para poder obtener la suma de todos ellos), le aplica una ventana de 1 minuto, hace la suma y escribe en InfluxDB. De esta forma se crea un time series en esta bbdd con los datos históricos de la activación de alarmas según su tipo para poder visualizarlo fácilmente en Grafana a través de una gráfica.
 
-
-
-## Esta aplicación es una parte de mi Proyecto Fin de Master elaborado como resultado del III Máster de Arquitecturas Big Data impartido por KSchool.
-
-### La arquitectura completa de todo el proyecto se puede ver en la siguiente imagen:
-
-![Arquitectura del proyecto](https://image.ibb.co/cRSmCb/arquitectura_completa.png)
 
 
 
