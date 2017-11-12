@@ -3,6 +3,8 @@
 
 #### Esta aplicación es una parte de mi Proyecto Fin de Master elaborado como resultado del III Máster de Arquitecturas Big Data impartido por KSchool.
 
+> http://kschool.com/cursos/master-en-arquitectura-big-data-madrid
+
 #### La arquitectura completa de todo el proyecto se puede ver en la siguiente imagen:
 
 ![Arquitectura del proyecto](https://image.ibb.co/cRSmCb/arquitectura_completa.png)
