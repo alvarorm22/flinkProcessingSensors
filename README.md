@@ -16,8 +16,8 @@ El mensaje que recibe y procesa Flink tiene el siguiente aspecto:
 "42959",
 "true",
 "false",
-"25.5",
-"30.0"
+"25",
+"30"
 }
 
 Los campos se corresponden respectivamente con: Id del sensor, movimiento, humo, temperatura y temperatura máxima.
