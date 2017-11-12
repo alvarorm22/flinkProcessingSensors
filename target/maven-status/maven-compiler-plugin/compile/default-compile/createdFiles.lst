@@ -1,6 +1,5 @@
 AlarmasOkSink.class
 FiltroSensoresOK.class
-PostInfluxStatistis.class
 MapCountAlarmas.class
 MapCountState.class
 FiltroAlarmasActivas.class

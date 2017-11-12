@@ -29,10 +29,10 @@ public class PostInfluxStatistics<IN> extends Window implements WindowFunction<I
             tipo = pojoit.getTipo();
         }
 
-        if(tipo!=null && tipo!="empty"){
+        if(tipo!=null){
             System.out.println("------------------Time window---------------The count of " + tipo +
                     " in this window is " + count);
-        } else System.out.println("------------------This window is empty, any alarm has been activated");
+        }
 
 
         String url = "http://ip-172-31-29-33:8086/write?db=prueba";

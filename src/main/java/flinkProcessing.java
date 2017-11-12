@@ -77,7 +77,7 @@ public class flinkProcessing implements Serializable{
           y aplico una ventana de un minuto. Almaceno la cuenta de los sensores activos y envío la cuenta a InfluxDB
           para visualizar las estadísticas de los últimos minutos en Grafana según el tipo de alarma generada*/
         CountStream.filter(new FiltroCount()).keyBy("tipo").
-                timeWindow(Time.seconds(60)).apply(new PostInfluxStatistics()).print();
+                timeWindow(Time.seconds(60)).apply(new PostInfluxStatistics());
 
 
         // ----------Topología streamOK---------

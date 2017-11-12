@@ -6,7 +6,6 @@
 /home/alvaro/git/flinkProcessingSensors/src/main/java/CassandraConnector.java
 /home/alvaro/git/flinkProcessingSensors/src/main/java/FiltroGenerarAlarma.java
 /home/alvaro/git/flinkProcessingSensors/src/main/java/GoogleMail.java
-/home/alvaro/git/flinkProcessingSensors/src/main/java/PostInfluxStatistis.java
 /home/alvaro/git/flinkProcessingSensors/src/main/java/flinkProcessing.java
 /home/alvaro/git/flinkProcessingSensors/src/main/java/SensorSchema.java
 /home/alvaro/git/flinkProcessingSensors/src/main/java/DataMessageMail.java

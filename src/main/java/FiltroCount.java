@@ -13,11 +13,7 @@ public class FiltroCount implements FilterFunction<SensorPojo> {
             sensorPojo.setTipo("temperatura");
         }
 
-        if (sensorPojo.getTipo().equals(null)){
-            sensorPojo.setTipo("empty");
-        }
-
-        System.out.println("---------------------------------------Recibido +1 Tipo: "+sensorPojo.getTipo());
+       System.out.println("---------------------------------------Recibido +1 Tipo: "+sensorPojo.getTipo());
 
 
         return true;

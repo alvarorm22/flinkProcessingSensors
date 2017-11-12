@@ -20,7 +20,7 @@ public class FiltroSensoresOK implements FilterFunction<SensorPojo> {
 
         boolean bool = false;
         if ((sensorPojo.getMovimiento().equals("false")) && (sensorPojo.getHumo().equals("false")) &&
-                ((Double.parseDouble(sensorPojo.getTemperatura())) < (Double.parseDouble(sensorPojo.getTempMaxima())))){
+                ((Integer.parseInt(sensorPojo.getTemperatura())) < (Integer.parseInt(sensorPojo.getTempMaxima())))){
             bool=true;
         }
 
