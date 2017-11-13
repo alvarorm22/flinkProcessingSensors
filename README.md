@@ -44,7 +44,7 @@ Los campos se corresponden respectivamente con: Id del sensor, movimiento, humo,
 ![Arquitectura](https://image.ibb.co/cyTUyG/arq_flink.png)
 
 
-####Los puntos de entrada a Flink son dos topics de Kafka:
+#### Los puntos de entrada a Flink son dos topics de Kafka:
 - ENTRY:  Los sensores envían todos los mensajes con su estado.
 - OK: Se reciben únicamente los mensajes de los sensores que han recuperado su estado normal después de haberse activado su alarma.
 
