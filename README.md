@@ -22,7 +22,7 @@ El mensaje que recibe y procesa Flink tiene el siguiente aspecto:
 
 Los campos se corresponden respectivamente con: Id del sensor, movimiento, humo, temperatura y temperatura máxima.
 
-####La lógica necesaria para este sistema y que Flink deberá de implementar es la siguiente:
+#### La lógica necesaria para este sistema y que Flink deberá de implementar es la siguiente:
 
 
 - Si el mensaje llega con sus campos (movimiento, humo y temperatura) correctos, se descartará el mensaje.
@@ -38,7 +38,7 @@ Los campos se corresponden respectivamente con: Id del sensor, movimiento, humo,
 
 - Se desea visualizar en tiempo real el histórico de alarmas que han sido activadas en una determinada franja de tiempo según su tipo.
 
-####Para poder cumplir con estos puntos, se ha propuesto implementar la siguiente arquitectura:
+#### Para poder cumplir con estos puntos, se ha propuesto implementar la siguiente arquitectura:
 
 
 ![Arquitectura](https://image.ibb.co/cyTUyG/arq_flink.png)
