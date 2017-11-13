@@ -22,7 +22,7 @@ El mensaje que recibe y procesa Flink tiene el siguiente aspecto:
 
 Los campos se corresponden respectivamente con: Id del sensor, movimiento, humo, temperatura y temperatura máxima.
 
-#### La lógica necesaria para este sistema y que Flink deberá de implementar es la siguiente:
+#### La lógica que se pretende resolver y que Flink deberá de implementar es la siguiente:
 
 
 - Si el mensaje llega con sus campos (movimiento, humo y temperatura) correctos, se descartará el mensaje.
