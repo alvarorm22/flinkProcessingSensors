@@ -95,8 +95,9 @@ public class AlarmasOkSink implements SinkFunction<SensorPojo>, Serializable {
 
         System.out.println("Se envia mail...");
         String title = "["+sensorPojo.getId()+"] - SENSOR OK";
-        GoogleMail.Send("monitoring.secure.alert", "kschoolmonitoring", "monitoring.secure.alert@gmail.com",
+        GoogleMail.Send("monitoring.secure.alert", "*****", "monitoring.secure.alert@gmail.com",
                 title, message.toString(sensorPojo.getTipo(),Integer.parseInt(sensorPojo.getId()), "ok"));
+
     }
 
 }

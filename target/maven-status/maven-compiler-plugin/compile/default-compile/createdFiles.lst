@@ -10,8 +10,8 @@ GoogleMail.class
 SensorSchema.class
 PostInfluxStatistics.class
 FiltroCount.class
-CassandraConnector.class
 DataMessageMail.class
+CassandraConnector.class
 MapCountState$1.class
 FiltroGenerarAlarma.class
 MapCountAlarmas$1.class
